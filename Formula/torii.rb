@@ -13,16 +13,16 @@ class Torii < Formula
   version "0.1.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url     "https://github.com/scumfrog/Torii-gateway/releases/download/v#{version}/torii-darwin-arm64"
+    url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-darwin-arm64"
     sha256  "REPLACE_WITH_DARWIN_ARM64_SHA256"
   elsif OS.mac?
-    url     "https://github.com/scumfrog/Torii-gateway/releases/download/v#{version}/torii-darwin-x64"
+    url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-darwin-x64"
     sha256  "REPLACE_WITH_DARWIN_X64_SHA256"
   elsif OS.linux? && Hardware::CPU.arm?
-    url     "https://github.com/scumfrog/Torii-gateway/releases/download/v#{version}/torii-linux-arm64"
+    url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-linux-arm64"
     sha256  "REPLACE_WITH_LINUX_ARM64_SHA256"
   else
-    url     "https://github.com/scumfrog/Torii-gateway/releases/download/v#{version}/torii-linux-x64"
+    url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-linux-x64"
     sha256  "REPLACE_WITH_LINUX_X64_SHA256"
   end
 
