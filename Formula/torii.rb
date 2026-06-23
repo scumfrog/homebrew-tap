@@ -10,20 +10,20 @@ class Torii < Formula
   desc "The secure gateway for AI tools — sits between MCP clients and servers"
   homepage "https://usetorii.dev"
   license "MIT"
-  version "0.1.17"
+  version "0.1.18"
 
   if OS.mac? && Hardware::CPU.arm?
     url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-darwin-arm64"
-    sha256  "b42a02ee291a4dc3b3891d096b13adcc1611682eef0c782fbdc9f7f009d4c5eb"
+    sha256  "29ea727b0c347eaee4edbb7d793c2f311b2bfebc597e8af43463891a35093652"
   elsif OS.mac?
     url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-darwin-x64"
-    sha256  "792753c2ad5a46fe53499a3784771d66295dadb9cb1db2312507b09002c764c6"
+    sha256  "2c3a48f8b80bd351ac7bcc31c8e5a289f5acb06b4ab47ea4d065d850665dccb7"
   elsif OS.linux? && Hardware::CPU.arm?
     url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-linux-arm64"
-    sha256  "a8f754655e10b452aea5b5539715459a8329645663a7566ccb468db77c068025"
+    sha256  "579b4c34b547822d8c493bfc9c04935dba409426d5b2b4aa8191f9df2c2b368b"
   else
     url     "https://github.com/scumfrog/torii/releases/download/v#{version}/torii-linux-x64"
-    sha256  "4f0d2c06591b69fc4ac177d4b9e16af3fc96b0321643f134a802b10b3e080eff"
+    sha256  "1fc2944053a817e0a6750d568cf9c121b5cb863298b85030b75286b03d426ebd"
   end
 
   def install
